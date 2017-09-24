@@ -1,7 +1,171 @@
-<h1>Pedigree#index</h1>
-<p>Find me in app/views/pedigree/index.html.erb</p>
+<h1>Pedigree</h1>
+<p> Required Input<span class="red">*</span></p>
 
-<form>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-  <%= recaptcha_tags %>
+  <input type=hidden name='captcha_settings' value='{"keyname":"Hawk_DB","fallback":"true","orgId":"00D1I000000lE0D","ts":""}'>
+  <input type=hidden name="oid" value="00D1I000000lE0D">
+  <input type=hidden name="retURL" value="https://jvs-project-baywing.herokuapp.com/thank_you/index">
+  <input type=hidden name="company" value="New Hawk Input">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="johnmforbes@gmail.com">   -->
+  <!--  ----------------------------------------------------------------------  -->
+
+  <div class="form-group">
+    <label for="first_name">First Name</label><span class="red">*</span><br>
+    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Last Name</label><span class="red">*</span><br>
+    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label><span class="red">*</span><br>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsJp">Hawk&#39;s Name</label><span class="red">*</span><br>
+    <input  id="00N1I000004dsJp" maxlength="40" name="00N1I000004dsJp" size="20" type="text" required /><br>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dscJ">Band Number</label><span class="red">*</span><br>
+    <input  id="00N1I000004dscJ" maxlength="15" name="00N1I000004dscJ" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCHP">Alternate Band Number</label><br>
+    <input  id="00N1I000004gCHP" maxlength="60" name="00N1I000004gCHP" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsFx">Hatch Year</label><br>
+    <input  id="00N1I000004dsFx" name="00N1I000004dsFx" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsT0">Sex</label><br>
+    <select  id="00N1I000004dsT0" name="00N1I000004dsT0" title="Sex">
+      <option value="Unknown">Unknown</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCLl">General Comments</label><br>
+    <textarea  id="00N1I000004gCLl" name="00N1I000004gCLl" type="text" wrap="soft"></textarea><br>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsXX">Father's Name</label><br>
+    <input  id="00N1I000004dsXX" maxlength="40" name="00N1I000004dsXX" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCHo">Father's Band Number</label><br>
+    <input  id="00N1I000004gCHo" maxlength="15" name="00N1I000004gCHo" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsbp">Mother's Name</label><br>
+    <input  id="00N1I000004dsbp" maxlength="40" name="00N1I000004dsbp" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCNI">Mother's Band Number</label><br>
+    <input  id="00N1I000004gCNI" maxlength="15" name="00N1I000004gCNI" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dscT">Origin</label><br>
+    <select  id="00N1I000004dscT" name="00N1I000004dscT" title="Origin">
+      <option value="Captive Bred">Captive Bred</option>
+      <option value="Wild Caught">Wild Caught</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsdR">Breeder Name</label><br>
+    <input  id="00N1I000004dsdR" maxlength="60" name="00N1I000004dsdR" size="20" type="text" /><br>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dseK">Country Caught</label><br>
+    <select  id="00N1I000004dseK" name="00N1I000004dseK" title="Country Origin">
+      <option value="">--None--</option>
+      <option value="USA">USA</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Chile">Chile</option>
+      <option value="Columbia">Columbia</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Peru">Peru</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Venezuela">Venezuela</option>
+    </select><br>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDIs">State Caught</label><br>
+
+    <select  id="00N1I000004gDIs" name="00N1I000004gDIs" title="State Origin">
+      <option value="">--None--</option>
+      <option value="Arizona">Arizona</option>
+      <option value="California">California</option>
+      <option value="Nevada">Nevada</option>
+      <option value="New Mexico">New Mexico</option>
+      <option value="Texas">Texas</option>
+    </select><br>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCND">Locality Caught</label><br>
+    <input  id="00N1I000004gCND" maxlength="40" name="00N1I000004gCND" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDIj">Subspecies</label><br>
+    <select  id="00N1I000004gDIj" name="00N1I000004gDIj" title="Subspecies">
+    <option value="">--None--</option>
+    <option value="Parabuteo unicinctus harrisi">Parabuteo unicinctus harrisi</option>
+    <option value="Parabuteo unicinctus unicinctus">Parabuteo unicinctus unicinctus</option>
+    <option value="Cross of the two subspecies">Cross of the two subspecies</option>
+  </select><br>
+  </div>
+
+  <div class="form-group">
+    <div class="g-recaptcha" data-sitekey="6Ld3cjAUAAAAACk05H8UibjKcg3FxrH6tf91I-mX"></div><br>
+    <input type="submit" name="submit">
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </form>

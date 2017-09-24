@@ -1,8 +1,218 @@
-<h1>Hunting#index</h1>
-<p>Find me in app/views/hunting/index.html.erb</p>
+<h1>Hunting</h1>
+<p> Required Input<span class="red">*</span></p>
 
-<form>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+  <input type=hidden name='captcha_settings' value='{"keyname":"Hawk_DB","fallback":"true","orgId":"00D1I000000lE0D","ts":""}'>
+  <input type=hidden name="oid" value="00D1I000000lE0D">
+  <input type=hidden name="retURL" value="https://jvs-project-baywing.herokuapp.com/thank_you/index">
+  <input type=hidden name="company" value="Hawk Hunting Input">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="johnmforbes@gmail.com">   -->
+  <!--  ----------------------------------------------------------------------  -->
+  <div class="form-group">
+    <label for="first_name">First Name</label><span class="red">*</span><br>
+    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Last Name</label><span class="red">*</span><br>
+    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label><span class="red">*</span><br>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dsJp">Hawk&#39;s Name</label><span class="red">*</span><br>
+    <input  id="00N1I000004dsJp" maxlength="40" name="00N1I000004dsJp" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004dscJ">Band Number</label><span class="red">*</span><br>
+    <input  id="00N1I000004dscJ" maxlength="15" name="00N1I000004dscJ" size="20" type="text" required />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCHy">Flying Weight In Grams</label><br>
+    <input  id="00N1I000004gCHy" name="00N1I000004gCHy" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDIn">Seasons Hunted</label><br>
+    <input  id="00N1I000004gDIn" name="00N1I000004gDIn" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCMy">Hunting Comments</label><br>
+    <textarea  id="00N1I000004gCMy" name="00N1I000004gCMy" type="text" wrap="soft"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCML">Overall Rank Compared To Other Harris&#39;s</label><br>
+    <select  id="00N1I000004gCML" name="00N1I000004gCML" title="Overall Rank Compared To Other Harris&#39;s">
+      <option value="">--None--</option>
+      <option value="Worst Ever">Worst Ever</option>
+      <option value="Below Average">Below Average</option>
+      <option value="Average">Average</option>
+      <option value="Above Average">Above Average</option>
+      <option value="Best Ever">Best Ever</option>
+      <option value="No hunting performance data available">No hunting performance data available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCBj">Group Hawking</label><br>
+    <select  id="00N1I000004gCBj" name="00N1I000004gCBj" title="Group Hawking">
+      <option value="">--None--</option>
+      <option value="Fights Constantly">Fights Constantly</option>
+      <option value="Mostly Fights">Mostly Fights</option>
+      <option value="Sometimes Fights">Sometimes Fights</option>
+      <option value="Only Fights When Provoked">Only Fights When Provoked</option>
+      <option value="Never Fights Even When Provoked">Never Fights Even When Provoked</option>
+      <option value="No Data Available">No Data Available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCIS">Follows And Maintains Position</label><br>
+    <select  id="00N1I000004gCIS" name="00N1I000004gCIS" title="Follows And Maintains Position">
+      <option value="">--None--</option>
+      <option value="Lags Constantly and or Sits Low">Lags Constantly and or Sits Low</option>
+      <option value="Mostly Lags and or Sits Low">Mostly Lags and or Sits Low</option>
+      <option value="Sometimes Lags and or Sits Low">Sometimes Lags and or Sits Low</option>
+      <option value="Rarely Lags and or Sits Low">Rarely Lags and or Sits Low</option>
+      <option value="Follows Close and High">Follows Close and High</option>
+      <option value="No Data Available">No Data Available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCHt">Flight Speed</label><br>
+    <select  id="00N1I000004gCHt" name="00N1I000004gCHt" title="Flight Speed">
+      <option value="">--None--</option>
+      <option value="Looses Ground To A Running Rabbit">Looses Ground To A Running Rabbit</option>
+      <option value="Below Average">Below Average</option>
+      <option value="Average">Average</option>
+      <option value="Above Average">Above Average</option>
+      <option value="Like a Goshawk With Brains">Like a Goshawk With Brains</option>
+      <option value="No Data Available">No Data Available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="0N1I000004gCJL">Footing Ability</label><br>
+    <select  id="00N1I000004gCJL" name="00N1I000004gCJL" title="Footing Ability">
+      <option value="">--None--</option>
+      <option value="Misses Easy Catches">Misses Easy Catches</option>
+      <option value="Often Misses Easy Catches">Often Misses Easy Catches</option>
+      <option value="Sometimes Misses Easy Catches">Sometimes Misses Easy Catches</option>
+      <option value="Rarely Misses Easy Catches">Rarely Misses Easy Catches</option>
+      <option value="Tractor Beam">Tractor Beam</option>
+      <option value="No Data Available">No Data Available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCN3">Hunts Well With Dogs</label><br>
+    <select  id="00N1I000004gCN3" name="00N1I000004gCN3" title="Hunts Well With Dogs">
+      <option value="">--None--</option>
+      <option value="Attacks Even Large Dogs">Attacks Even Large Dogs</option>
+      <option value="Mostly Attacks Dogs">Mostly Attacks Dogs</option>
+      <option value="Sometimes Attacks Dogs">Sometimes Attacks Dogs</option>
+      <option value="Rarely Attacks Dogs">Rarely Attacks Dogs</option>
+      <option value="Trustworthy Around the Smallest Dog">Trustworthy Around the Smallest Dog</option>
+      <option value="No Data Available">No Data Available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCNN">Persistence In Pursuit</label><br>
+    <select  id="00N1I000004gCNN" name="00N1I000004gCNN" title="Persistence In Pursuit">
+      <option value="">--None--</option>
+      <option value="Gives Up Easily">Gives Up Easily</option>
+      <option value="Often Gives Up">Often Gives Up</option>
+      <option value="Sometimes Gives Up">Sometimes Gives Up</option>
+      <option value="Rarely Gives Up">Rarely Gives Up</option>
+      <option value="Never Quits">Never Quits</option>
+      <option value="No Data Available">No Data Available</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDKK">Total Rabbits Caught</label><br>
+    <input  id="00N1I000004gDKK" name="00N1I000004gDKK" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDK5">Total Hares / Jackrabbits Caught</label><br>
+    <input  id="00N1I000004gDK5" name="00N1I000004gDK5" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDKP">Total Squirrels Caught</label><br>
+    <input  id="00N1I000004gDKP" name="00N1I000004gDKP" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDK6">Total Upland Birds Caught</label><br>
+    <input  id="00N1I000004gDK6" name="00N1I000004gDK6" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDKU">Total Waterfowl Caught</label><br>
+    <input  id="00N1I000004gDKU" name="00N1I000004gDKU" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDKF">Total Miscellaneous Caught</label><br>
+    <input  id="00N1I000004gDKF" name="00N1I000004gDKF" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCNE">Total Kills All Seasons</label><br>
+    <input  id="00N1I000004gCNE" name="00N1I000004gCNE" size="20" type="text" />
+  </div>
 
 
-  <%= recaptcha_tags %>
+  <div class="form-group">
+    <label for="00N1I000004gDKA">Total Kills Best Season</label><br>
+    <input  id="00N1I000004gDKA" name="00N1I000004gDKA" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDCz">Owner During Best Season</label><br>
+    <input  id="00N1I000004gDCz" maxlength="35" name="00N1I000004gDCz" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCHZ">Disposition</label><br>
+    <select  id="00N1I000004gCHZ" name="00N1I000004gCHZ" title="Disposition">
+      <option value="">--None--</option>
+      <option value="Transferred">Transferred</option>
+      <option value="Lost">Lost</option>
+      <option value="Death">Death</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gDJv">Year Of Death</label><br>
+    <input  id="00N1I000004gDJv" name="00N1I000004gDJv" size="20" type="text" />
+  </div>
+
+  <div class="form-group">
+    <label for="00N1I000004gCHU">Cause Of Death</label><br>
+    <textarea  id="00N1I000004gCHU" name="00N1I000004gCHU" type="text" wrap="soft"></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="g-recaptcha" data-sitekey="6Ld3cjAUAAAAACk05H8UibjKcg3FxrH6tf91I-mX"></div>
+    <input type="submit" name="submit">
+  </div><br/>
 </form>
