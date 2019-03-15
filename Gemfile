@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby "2.2.3"
+ruby "2.4.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.9'
 
 
 
-gem 'pg'
+gem 'pg', '~> 0.18'
 gem 'bootstrap-sass', '~> 3.3.6'
 
 
@@ -41,12 +41,12 @@ gem 'rails_12factor', group: :production
 
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
 
-gem "recaptcha", require: "recaptcha/rails"
+gem "recaptcha", "~> 3.3.0" ,require: "recaptcha/rails"
 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 10.0.2'
 end
 
 group :development do
