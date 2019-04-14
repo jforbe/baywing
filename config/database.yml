@@ -21,7 +21,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: baywing_dev
+  database: baywing_prod
   pool: 5
   username: postgres
   password: Marzen95
