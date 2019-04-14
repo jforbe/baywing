@@ -17,3 +17,13 @@ test:
   password: Marzen95
   host: localhost
   port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: baywing_dev
+  pool: 5
+  username: postgres
+  password: Marzen95
+  host: localhost
+  port: 5432

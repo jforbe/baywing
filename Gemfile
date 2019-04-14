@@ -9,6 +9,8 @@ gem 'rails', '4.2.9'
 gem 'pg', '~> 0.18'
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'figaro'
+gem 'puma'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -55,5 +57,11 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
 end
 
